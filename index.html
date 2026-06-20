@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduNexus // Premium Web Development Academy</title>
+    <meta name="description" content="Master HTML, CSS, and JavaScript through 36 professional interactive video lessons in a premium, ultra-modern SaaS workspace.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+    <div id="entrance-overlay" class="entrance-overlay">
+        <video id="entrance-video" class="entrance-video" autoplay muted playsinline>
+            <source src="assets/videos/entrance.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div id="app-content" class="app-content hidden">
+        
+        <div class="video-bg-container">
+            <video id="bg-loop" autoplay loop muted playsinline class="video-bg">
+                <source src="assets/videos/background-loop.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="#" class="nav-logo">EDU<span>NEXUS</span></a>
+                <button class="mobile-toggle" aria-label="Toggle Navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <div class="nav-menu">
+                    <a href="#hero" class="nav-link active">Home</a>
+                    <a href="#courses" class="nav-link">Courses</a>
+                    <a href="#stats" class="nav-link">Stats</a>
+                    <a href="#faq" class="nav-link">FAQ</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <section id="hero" class="hero-section">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="hero-content">
+                <h1 class="hero-title animate-fade-up">Learn Web <br><span class="text-glow">Development</span></h1>
+                <p class="hero-subtitle animate-fade-up">Master HTML, CSS, and JavaScript through professional video lessons designed inside a high-performance digital ecosystem.</p>
+                <a href="#courses" class="btn-neon animate-fade-up">Start Learning</a>
+            </div>
+        </section>
+
+        <section id="courses" class="courses-section">
+            <div class="section-header">
+                <h2 class="section-title">Professional Paths</h2>
+                <p class="section-tagline">3 premium modules, 36 comprehensive tracks</p>
+            </div>
+            
+            <div class="courses-grid">
+                <div class="course-card" data-course="html" data-href="pages/html-course.html">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="course-badge">Module 01</div>
+                        <h3>HTML5 Architecture</h3>
+                        <p>12 Lessons • Beginner Friendly</p>
+                        <span class="card-action">Access Blueprint</span>
+                    </div>
+                </div>
+
+                <div class="course-card" data-course="css" data-href="pages/css-course.html">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="course-badge">Module 02</div>
+                        <h3>Advanced CSS Engine</h3>
+                        <p>12 Lessons • Responsive Layouts & FX</p>
+                        <span class="card-action">Access Blueprint</span>
+                    </div>
+                </div>
+
+                <div class="course-card" data-course="javascript" data-href="pages/javascript-course.html">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="course-badge">Module 03</div>
+                        <h3>JavaScript Runtime</h3>
+                        <p>12 Lessons • Interactive Frameworks</p>
+                        <span class="card-action">Access Blueprint</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="lessons-workspace" class="lessons-section hidden">
+            <div class="section-header">
+                <button id="back-to-courses" class="btn-back">← Back to Modules</button>
+                <h2 id="active-course-title" class="section-title">Lessons Blueprint</h2>
+            </div>
+            <div class="lessons-grid" id="dynamic-lessons-container">
+                </div>
+        </section>
+
+        <section id="stats" class="stats-section">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3 class="stat-number" data-target="36">0</h3>
+                    <p class="stat-label">Video Lessons</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number" data-target="3">0</h3>
+                    <p class="stat-label">Specialized Courses</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number" data-target="100">0</h3>
+                    <p class="stat-label">Free Access (%)</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq-section">
+            <div class="section-header">
+                <h2 class="section-title">System FAQ</h2>
+            </div>
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <button class="faq-trigger">Do I need coding experience?<span class="faq-icon"></span></button>
+                    <div class="faq-panel">
+                        <p>No prior framework knowledge or base layout execution experience is required. We configure your knowledge path directly from zero root levels.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-trigger">Can I watch on mobile?<span class="faq-icon"></span></button>
+                    <div class="faq-panel">
+                        <p>Yes, the full suite environment is completely responsive. View layouts scale responsively from desktop sizes down to micro-mobile devices.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-trigger">How many lessons?<span class="faq-icon"></span></button>
+                    <div class="faq-panel">
+                        <p>Exactly 36 deep-dive lessons distributed across 3 core web development engines (HTML, CSS, and JavaScript).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="section-header">
+                <h2 class="section-title">Connect Infrastructure</h2>
+            </div>
+            <div class="contact-links">
+                <a href="https://www.facebook.com/share/1DSWNCgGuc/" class="contact-tile-link">
+                    <div class="contact-tile">
+                        <span class="tile-title">Message me?</span>
+                        <span class="tile-value">Web creator/facebook</span>
+                    </div>
+                </a>
+                <a href="https://youtube.com/@sdptsolutions?si=tMJeg9y_Aw5SPjxl" target="_blank" class="contact-tile-link">
+                    <div class="contact-tile">
+                        <span class="tile-title">Youtube</span>
+                        <span class="tile-value">SDPT Solutions/Origin contents</span>
+                    </div>
+                </a>
+                <a href="https://discord.gg/tYzrcFmjV" target="_blank" class="contact-tile-link">
+                    <div class="contact-tile">
+                        <span class="tile-title">Discord</span>
+                        <span class="tile-value">Join My Server</span>
+                    </div>
+                </a>
+                <a href="https://www.mediafire.com/file/i0hmn6m587yplp0/SDPT-LESSONS-CSS12.7z/file" target="_blank" class="contact-tile-link">
+                    <div class="contact-tile">
+                        <span class="tile-title">Mediafire</span>
+                        <span class="tile-value">Download Full HD assets</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="credits" class="credits-section">
+            <div class="credits-card">
+                <h3>Course & Content Attributions</h3>
+                <p>All course workspace video formats belong exclusively to @SDPT solutions their respective tech creators and educators. Original learning content is fully credited to their respective owners.</p>
+                <div class="credits-links">
+                    <a href="https://youtube.com/@sdptsolutions?si=tMJeg9y_Aw5SPjxl" target="_blank" class="credit-anchor">Primary Video Creator</a>
+                    <span class="separator">|</span>
+                    <a href="#" class="credit-anchor">Educational Sandbox Attributions</a>
+                </div>
+                <p class="disclaimer-text">This deployment configuration runs exclusively for contextual learning, training, and educational workspace execution purposes.</p>
+            </div>
+        </section>
+
+        <footer class="main-footer">
+            <p>&copy; 2026 <span>EDU<span>NEXUS</span></span>. All rights reserved.</p>
+            <p class="footer-sub">Engineered via premium HTML, CSS, & Modern Web JS Architecture.</p>
+        </footer>
+
+    </div>
+
+    <div id="video-modal" class="modal-overlay hidden">
+        <div class="modal-wrapper">
+            <button id="modal-close" class="modal-close-btn">&times;</button>
+            <div class="modal-body">
+                <video id="modal-player" controls playsinline controlsList="nodownload">
+                    <source src="" type="video/mp4">
+                </video>
+                <h3 id="modal-video-title">Loading Track Layout...</h3>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const videoModal = document.getElementById('video-modal');
+            const modalPlayer = document.getElementById('modal-player');
+            const modalCloseBtn = document.getElementById('modal-close');
+
+            window.addEventListener('keydown', (e) => {
+                if (videoModal && !videoModal.classList.contains('hidden')) {
+                    if (e.code === 'Space') {
+                        e.preventDefault();
+                        if (modalPlayer.paused) {
+                            modalPlayer.play();
+                        } else {
+                            modalPlayer.pause();
+                        }
+                    }
+                    if (e.code === 'ArrowRight') {
+                        e.preventDefault();
+                        modalPlayer.currentTime = Math.min(modalPlayer.duration, modalPlayer.currentTime + 5);
+                    }
+                    if (e.code === 'ArrowLeft') {
+                        e.preventDefault();
+                        modalPlayer.currentTime = Math.max(0, modalPlayer.currentTime - 5);
+                    }
+                    if (e.code === 'Escape') {
+                        e.preventDefault();
+                        if (modalCloseBtn) {
+                            modalCloseBtn.click();
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+
+    <script src="assets/js/entrance.js"></script>
+    <script src="assets/js/navigation.js"></script>
+    <script src="assets/js/faq.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
